@@ -84,7 +84,7 @@ app.post("/sucess", function (req, res) {
 
 
 
-        app.listen(4000, function () {
+        app.listen(process.env.Port||4000, function () {
             console.log("server is running on port 4000");
         });
 
